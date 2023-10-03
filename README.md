@@ -2,6 +2,7 @@
 - 개발 환경 : vite
 - 프레임워크 : React
 - 언어 및 빌드방식 : JS + SWC
+- 배포 주소 : https://twitter-reloaded-29b62.web.app
 
 # React + Vite
 
