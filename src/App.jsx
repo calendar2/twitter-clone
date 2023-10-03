@@ -11,6 +11,7 @@ import reset from "styled-reset";
 import { useEffect, useState } from "react";
 import { auth } from "./firebase";
 import ProtectedRoute from "./components/protected-route";
+import FindPwd from "./routes/find-pwd";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,11 @@ const router = createBrowserRouter([
   {
     path: '/create-account',
     element: <CreateAccount />
-  }
+  },
+  {
+    path: '/find-pwd',
+    element: <FindPwd />
+  },
 ]);
 
 const GlobalStyles = createGlobalStyle`

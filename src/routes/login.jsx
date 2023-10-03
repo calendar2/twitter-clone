@@ -71,6 +71,9 @@ export default function CreateAccount() {
         계정이 없으신가요?{" "}
         <Link to="/create-account">계정 생성 &rarr;</Link>
       </Switcher>
+      <Switcher>
+        <Link to="/find-pwd">비밀번호를 잊었어요!</Link>
+      </Switcher>
       <GithubButton />
     </Wrapper>
   );
