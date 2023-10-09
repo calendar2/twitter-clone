@@ -3,6 +3,7 @@
 - 프레임워크 : React
 - 언어 및 빌드방식 : JS + SWC
 - 배포 주소 : https://twitter-reloaded-29b62.web.app
+- 블로그 주소 : https://velog.io/@calendar2/트위터-클론코딩JS
 
 # React + Vite
 

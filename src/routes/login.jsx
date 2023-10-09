@@ -1,9 +1,9 @@
 import { FirebaseError } from "firebase/app";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { auth } from "../firebase";
-import { Form, Input, Switcher, Title, Wrapper } from "../components/auth-components";
+import { Form, Input, Switcher, Title, Wrapper, Error } from "../components/auth-components";
 import GithubButton from "../components/github-btn";
 
 export default function CreateAccount() {

@@ -1,7 +1,7 @@
 import { sendPasswordResetEmail } from "firebase/auth";
-import { Form, Input, Title, Wrapper } from "../components/auth-components";
+import { Form, Input, Title, Wrapper, Error } from "../components/auth-components";
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import { useState } from "react";
 import { auth } from "../firebase";
 
 export default function FindPwd() {
@@ -21,7 +21,7 @@ export default function FindPwd() {
     if(isLoading || email === "") return;
     try {
       setLoading(true);
-      await sendPasswordResetEmail(auth, email).then((a) => {
+      await sendPasswordResetEmail(auth, email).then(() => {
         alert("입력한 이메일로 비밀번호 재설정 메일을 보냈습니다.");
         navigate("/login");
       });
